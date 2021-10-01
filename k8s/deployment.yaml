@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: durdsvianna/rotten-potatoes:2.0.0
+          image: durdsvianna/rotten-potatoes:2.0.1
           ports:
             - containerPort: 5000
           env:
@@ -80,4 +80,4 @@ spec:
     - port: 8080
       targetPort: 5000
       nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
