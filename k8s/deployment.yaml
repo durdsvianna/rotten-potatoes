@@ -43,7 +43,7 @@ kind: Deployment
 metadata:
   name: rotten-potatoes-deployment
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: web
@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: durdsvianna/rotten-potatoes:1.0.0
+          image: durdsvianna/rotten-potatoes:2.0.0
           ports:
             - containerPort: 5000
           env:
