@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: |
             durdsvianna/rotten-potatoes:latest
-            durdsvianna/rotten-potatoes:${{ github.run_number }}
+            durdsvianna/rotten-potatoes:2.0.${{ github.run_number }}
